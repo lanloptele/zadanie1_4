@@ -29,8 +29,14 @@ class Main {
         
         break;
       case 3:
-        System.out.println("Sroda.");
-        break;
+        Scanner cans = new Scanner(System.in);
+        System.out.println("Podaj bok a(w metrach): ");
+        double e = cans.nextDouble();
+         System.out.println("Podaj wysokość h(w metrach): ");
+        double f = cans.nextDouble();
+      double pole2 = 0.5*e * f;
+        System.out.println("Pole trójkąta prostokątnego ="  + pole2 + " metra/ów");
+        break;// nie dasz break to wykona się kolejny case
       case 4:
         System.out.println("Czwartek.");
         break;
