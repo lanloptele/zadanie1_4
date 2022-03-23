@@ -38,7 +38,17 @@ class Main {
         System.out.println("Pole trójkąta prostokątnego ="  + pole2 + " metra/ów");
         break;// nie dasz break to wykona się kolejny case
       case 4:
-        System.out.println("Czwartek.");
+        Scanner ans = new Scanner(System.in);
+        System.out.println("Podaj liczbe do dzielenia: ");
+        double g = ans.nextDouble();
+         System.out.println("przez ile?: ");
+        double h = ans.nextDouble();
+      double iloraz = g/h;
+        if(h == 0){
+        System.out.println("Nie można dzielić przez 0");
+          break;
+      }
+        System.out.println("iloraz="  + iloraz);
         break;
          default:
         System.out.println("Nieznana funkcja!!!!");
