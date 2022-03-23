@@ -13,7 +13,7 @@ class Main {
          System.out.println("Podaj bok b(w metrach): ");
         double b = scan.nextDouble();
       double pole = a * b;
-        System.out.println("Pole prostokąta= " + pole);
+        System.out.println("Pole prostokąta="  + pole + " metra");
         
         break;
       case 2:
