@@ -3,11 +3,18 @@ import java.lang.Math;
 class Main {
   public static void main(String[] args) {
    int instrukcja;
-    System.out.println("Podaj co liczymy:");
+    System.out.println("Podaj co liczymy:\n1-Pole prostokąta\n2-Suma pól kół\n3-Pole trójkąta prostokątnego\n4-iloraz(który nie dzieli przez 0) ");
     instrukcja = getInt();
     switch (instrukcja) {
       case 1:
-        System.out.println("Poniedzialek.");
+       Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj bok a(w metrach): ");
+        double a = scan.nextDouble();
+         System.out.println("Podaj bok b(w metrach): ");
+        double b = scan.nextDouble();
+      double pole = a * b;
+        System.out.println("Pole prostokąta= " + pole);
+        
         break;
       case 2:
         System.out.println("Wtorek.");
