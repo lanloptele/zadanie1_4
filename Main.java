@@ -13,11 +13,20 @@ class Main {
          System.out.println("Podaj bok b(w metrach): ");
         double b = scan.nextDouble();
       double pole = a * b;
-        System.out.println("Pole prostokąta="  + pole + " metra");
+        System.out.println("Pole prostokąta="  + pole + " metra/ów");
         
         break;
       case 2:
-        System.out.println("Wtorek.");
+        Scanner nacs = new Scanner(System.in);
+        System.out.println("Podaj promień koła: ");
+        double c = nacs.nextDouble();
+         System.out.println("Podaj promień koła drugiego: ");
+        double d = nacs.nextDouble();
+        c = Math.pow(c,2);//a^2
+        d = Math.pow(d,2);
+      double suma = (3.14*c)+(3.14*d);
+        System.out.println("Suma pól = "  + suma );
+        
         break;
       case 3:
         System.out.println("Sroda.");
